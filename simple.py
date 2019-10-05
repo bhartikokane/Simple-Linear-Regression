@@ -13,7 +13,7 @@ with open(filename, 'r') as csvfile:
     csvreader = csv.reader(csvfile) 
     for row in csvreader: 
         rows.append(row)
-for i in range(rows):
+for i in range(len(rows)):
     sumx = sumx + int(rows[i][0])
     xm = sumx / len(rows)
     sumy = sumy + int(rows[i][1])
